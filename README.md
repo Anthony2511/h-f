@@ -8,7 +8,7 @@ un nouveau site avec la création d'une administration.
 
 ## Fonctionnalités
 
-* __ Afficher la liste des athlètes__
+* __Afficher la liste des athlètes__
    * Filtrer par discipline et catégorie
    * Archiver les anciens athlètes qui ont quitté le club ou qui ont arrêté
 * __Page d’un athlète__
@@ -16,14 +16,14 @@ un nouveau site avec la création d'une administration.
    * Records personnels
    * Entraîneur(s)
    * Prochaines compétitions
-* __Afficher un calendrier pour les compétitions __
+* __Afficher un calendrier pour les compétitions__
    * Archiver les résultats
 * __Afficher la liste des entraîneurs__
   * Proposition d'entrainements pour athlètes
-* __Afficher la liste des dirigeants par lieu ( 4 lieu différents pour le club ), plusieurs dirigeants __
+* __Afficher la liste des dirigeants par lieu ( 4 lieu différents pour le club ), plusieurs dirigeants__
 * __Planning des entraînement, stage,…__
   * Afficher en fonction d’un entraîneur ou d’une discipline
 * __Statistiques des palmarès du club__
 * __Mise en avant des athlètes élites et suivi__
-* __Afficher les records du club __
-* __Tarifs des équipements du club __
+* __Afficher les records du club__
+* __Tarifs des équipements du club__
