@@ -15,13 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('login', 'LoginController@show');
-Route::post('login', 'LoginController@do');
 
-//ADMIN
-Route::group(['prefix' => config('backpack.base.route_prefix', 'admin'), 'middleware' => ['web', 'auth'], 'namespace' => 'Admin'], function () {
-    // Backpack\NewsCRUD
-    CRUD::resource('article', 'ArticleCrudController');
-    CRUD::resource('category', 'CategoryCrudController');
-    CRUD::resource('tag', 'TagCrudController');
-});
