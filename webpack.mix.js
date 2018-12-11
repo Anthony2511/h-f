@@ -11,5 +11,11 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-   .sass('resources/sass/app.scss', 'public/css');
+
+mix
+    .stylus('resources/assets/stylus/styles.styl', 'public/css')
+    .js('resources/assets/js/app.js', 'public/js')
+
+.browserSync({
+    proxy: 'hf.test'
+});
