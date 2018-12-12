@@ -9,3 +9,4 @@
       <li><a href="{{ backpack_url('tag') }}"><i class="fa fa-tag"></i> <span>Tags</span></a></li>
     </ul>
 </li>
+<li><a href='{{ backpack_url('setting') }}'><i class='fa fa-cog'></i> <span>Paramètres</span></a></li>

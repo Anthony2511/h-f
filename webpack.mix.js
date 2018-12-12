@@ -14,7 +14,7 @@ const mix = require('laravel-mix');
 
 mix
     .stylus('resources/assets/stylus/styles.styl', 'public/css')
-    .js('resources/assets/js/app.js', 'public/js')
+    .js('resources/assets/js/all.js', 'public/js')
 
 .browserSync({
     proxy: 'hf.test'

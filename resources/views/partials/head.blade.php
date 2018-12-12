@@ -4,7 +4,7 @@
     <meta name="robots" content="noindex,nofollow">
     @yield('styles')
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/print.css') }}" media="print" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}" type="text/css">
 
     @yield('highlightJS')
 
