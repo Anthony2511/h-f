@@ -1,6 +1,97 @@
 /* ******************
+ * Base
+   ******************* */
+html {
+  overflow-x: hidden;
+}
+html * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'opensans';
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+form input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  outline: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.hidden {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+/* ******************
  * Settings
    ******************* */
+@font-face {
+  font-family: 'montserrat';
+  src: url(/fonts/montserrat-light-webfont.woff2?ac1b634f790d2b9d1b23db1b90a376c7) format('woff2'), url(/fonts/montserrat-light-webfont.woff?f55e8f8ade113e46e1bed48683ae0bb4) format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'montserrat';
+  src: url(/fonts/montserrat-regular-webfont.woff2?85eff112eb75c69cab02c571c934c1dc) format('woff2'), url(/fonts/montserrat-regular-webfont.woff?15d56660f3bcf0c45e7d9583499c53be) format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'montserrat';
+  src: url(/fonts/montserrat-semibold-webfont.woff2?0c287ddd3bf08d672452f12a8b4f74df) format('woff2'), url(/fonts/montserrat-semibold-webfont.woff?ae96639db775f44526f066e20e4f37b0) format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'montserrat';
+  src: url(/fonts/montserrat-bold-webfont.woff2?8b3bc2c96381f09730df8a7047db7679) format('woff2'), url(/fonts/montserrat-bold-webfont.woff?2c0cb90d1b6d76f11bd1e24f12829376) format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'montserrat';
+  src: url(/fonts/montserrat-extrabold-webfont.woff2?63991fc3ebf7af623c28c40b8153862e) format('woff2'), url(/fonts/montserrat-extrabold-webfont.woff?ac94f6a5ee90fe0d2015100326c7da89) format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'opensans';
+  src: url(/fonts/opensans-light-webfont.woff2?5621b89fdf14f0ac93c5e7803a89c8c3) format('woff2'), url(/fonts/opensans-light-webfont.woff?4d6a63ece51112909676dae89987a97f) format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'opensans';
+  src: url(/fonts/opensans-regular-webfont.woff2?d76695a01ae2e5b16ee2499a2a465fd7) format('woff2'), url(/fonts/opensans-regular-webfont.woff?2b12366bee5634ceeb377035f36add55) format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'opensans';
+  src: url(/fonts/opensans-semibold-webfont.woff2?db96c0acfb5ea5047c7e64ed9cd2ea3f) format('woff2'), url(/fonts/opensans-semibold-webfont.woff?3449cffc2d3c6cfa3121284d578fcdf7) format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'opensans';
+  src: url(/fonts/opensans-bold-webfont.woff2?9cdbdb5c364d655c9d93240fdd97f9b5) format('woff2'), url(/fonts/opensans-bold-webfont.woff?10ce3a572dec994874bfd70c55fdf07b) format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'opensans';
+  src: url(/fonts/opensans-extrabold-webfont.woff2?d4b821c0716a5696d67f300edc1f7640) format('woff2'), url(/fonts/opensans-extrabold-webfont.woff?14ee55a1f30bdf7461818cffef23ff1e) format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
 /* *****************
  * Tools
    ******************* */
@@ -140,12 +231,131 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+/* cursor: default; */
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-appearance: button; /* for input */
+  -webkit-user-select: none; /* for button */
+  -moz-user-select: none;
+  -ms-user-select: none;
+  outline: none;
+  border-radius: 0;
+}
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+}
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
 /* ******************
  * Components
    ******************* */
-.title {
-  color: #f00;
-  font-size: 40px;
+.header-home {
+  background: url("/img/Background.png") no-repeat top center/cover;
+  background-position: 50% 50%;
+  height: 46em;
+  position: relative;
+}
+.header-home__bloc {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 40%;
+}
+.header-home__title {
+  font-family: 'montserrat';
+  font-size: 2.5em;
+  font-weight: 700;
+}
+.header-home__text {
+  font-family: 'opensans';
+  max-width: 35%;
+  line-height: 1.5;
+  text-align: center;
+  margin: 1.25em 0 3.125em;
+}
+.nav {
+  max-width: 72.5em;
+  margin: 0 auto;
+}
+.nav__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3.125em;
+}
+.menu__item {
+  display: inline-block;
+  font-family: 'opensans';
+  color: #fff;
+}
+.menu__item + .menu__item {
+  margin-left: 3.125em;
+}
+.button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-family: 'opensans';
+}
+.button-white__left {
+  background-color: #fff;
+  text-transform: uppercase;
+  color: #2c3e50;
+  font-weight: 800;
+  padding: 0.9375em 2.5em;
+  border-radius: 10px 0 0 10px;
+  letter-spacing: 0.5px;
+}
+.button-white__right {
+  background-color: #f4f4f4;
+  border-radius: 0 10px 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0.9375em;
+  color: #2c3e50;
 }
 /* ******************
  * Trumps

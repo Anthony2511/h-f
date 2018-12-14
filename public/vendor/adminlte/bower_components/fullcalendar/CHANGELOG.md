@@ -277,7 +277,7 @@ Breaking Changes:
 - `lang` option renamed to `locale`
 - dist files have been renamed to be more consistent with MomentJS:
 	- `lang/` -> `locale/`
-	- `lang-all.js` -> `locale-all.js`
+	- `lang-app.js` -> `locale-app.js`
 - behavior of moment methods no longer affected by ambiguousness:
 	- `isSame`
 	- `isBefore`
