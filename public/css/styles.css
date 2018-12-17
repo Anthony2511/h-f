@@ -424,9 +424,11 @@ input[type="search"]::-webkit-search-decoration {
   padding: 0.9375em 2.5em;
   border-radius: 10px 0 0 10px;
   letter-spacing: 0.5px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .button-white__right {
-  background-color: #f4f4f4;
+  background-color: #ced6e0;
   border-radius: 0 10px 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -439,6 +441,8 @@ input[type="search"]::-webkit-search-decoration {
           align-items: center;
   padding: 0 0.9375em;
   color: #2c3e50;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .button-white__right:before {
   font-family: 'iconfont';
@@ -451,6 +455,25 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\E902";
+  font-size: 0.9375em;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.button:hover .button-white__left {
+  background-color: #ced6e0;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.button:hover .button-white__right {
+  background-color: #fff;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.button:hover .button-white__right:before {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .button-blue__left {
   background-color: #34495e;
@@ -460,6 +483,8 @@ input[type="search"]::-webkit-search-decoration {
   padding: 0.9375em 2.5em;
   border-radius: 10px 0 0 10px;
   letter-spacing: 0.5px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .button-blue__right {
   background-color: #2c3e50;
@@ -475,6 +500,8 @@ input[type="search"]::-webkit-search-decoration {
           align-items: center;
   padding: 0 0.9375em;
   color: #fff;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .button-blue__right:before {
   font-family: 'iconfont';
@@ -487,6 +514,24 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\E902";
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.button:hover .button-blue__left {
+  background-color: #2c3e50;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.button:hover .button-blue__right {
+  background-color: #34495e;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.button:hover .button-blue__right:before {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .title {
   font-family: 'montserrat';
