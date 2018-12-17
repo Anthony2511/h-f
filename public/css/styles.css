@@ -354,6 +354,7 @@ input[type="search"]::-webkit-search-decoration {
   left: 0;
   color: #fff;
   text-align: left;
+  z-index: 20;
 }
 .home-athletes__infos-title {
   font-family: 'montserrat';
@@ -385,6 +386,46 @@ input[type="search"]::-webkit-search-decoration {
   width: 100%;
   height: 100%;
   display: block;
+  -webkit-transition: 0.3s 0s ease-in-out;
+  transition: 0.3s 0s ease-in-out;
+}
+.home-athletes__link:hover {
+  background-color: rgba(52,73,94,0.8);
+  border-radius: 10px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.home-athletes__link:before {
+  font-family: 'iconfont';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\E900";
+  color: #fff;
+  font-size: 1.5625em;
+  position: absolute;
+  top: 50%;
+  opacity: 0;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.home-athletes__link:hover.home-athletes__link:before {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  opacity: 1;
+}
+.home-athletes__link:hover.home-athletes__figure:before {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .nav__container {
   display: -webkit-box;
