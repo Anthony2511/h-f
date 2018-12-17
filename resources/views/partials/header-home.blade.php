@@ -1,4 +1,4 @@
-<header class="header-home">
+<header class="header-home" role="banner">
     <div class="wrap">
         @include('partials.navigation')
         <section class="header-home__bloc">
@@ -9,7 +9,7 @@
             </p>
             <a href="" class="button">
                 <span class="button-white__left">En savoir plus</span>
-                <i class="button-white__right"> > </i>
+                <i class="button-white__right"></i>
             </a>
         </section>
     </div>

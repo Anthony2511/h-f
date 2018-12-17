@@ -1,6 +1,8 @@
 .button
   display inline-flex
   font-family 'opensans'
+
+ /*****WHITE*****/
 .button-white
   &__left
     background-color $cWhite
@@ -18,3 +20,27 @@
     align-items center
     padding 0 s(15,16)
     color $cDarkBlue
+    &:before
+      icon('arrowRight')
+
+/*****BLUE*****/
+.button-blue
+  &__left
+    background-color $cBlue
+    text-transform: uppercase
+    color $cWhite
+    font-weight: 800
+    padding s(15, 16) s(40,16)
+    border-radius 10px 0 0 10px
+    letter-spacing 0.5px
+  &__right
+    background-color $cDarkBlue
+    border-radius 0 10px 10px 0
+    display flex
+    justify-content center
+    align-items center
+    padding 0 s(15,16)
+    color $cWhite
+    &:before
+      icon('arrowRight')
+
