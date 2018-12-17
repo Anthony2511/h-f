@@ -33,7 +33,7 @@ img {
  * Settings
    ******************* */
 @font-face {
-  font-family: 'icomoon';
+  font-family: 'iconfont';
   src: url(/fonts/icomoon.eot?67a06b9a5a9bf86a9a864c9b57fed451);
   src: url(/fonts/icomoon.eot?67a06b9a5a9bf86a9a864c9b57fed451#iefix) format('embedded-opentype'), url(/fonts/icomoon.ttf?2841839d9e83ef62efb2758aa04cec83) format('truetype'), url(/fonts/icomoon.woff?31ef0104f76a59a55c633944c2c5ebc3) format('woff'), url(/fonts/icomoon.svg?90d3ea81fdf088c08e1f191c99f94cab#icomoon) format('svg');
   font-weight: normal;
