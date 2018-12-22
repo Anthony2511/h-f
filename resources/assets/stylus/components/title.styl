@@ -4,18 +4,27 @@
   font-weight: 600
   position relative
   margin-bottom s(50,40)
+  text-align left
   &__blue
     color $cDarkBlue
-    text-align left
   &__white
     color $cWhite
-  &__left
+  &__center
+    text-align center
     &:after
       content ''
-      position absolute
       display block
       background-color $cOrange
       width s(50,40)
       height s(2,40)
+      margin 0 auto
+  &__left
+    &:after
+      content ''
+      display block
+      background-color $cOrange
+      width s(50,40)
+      height s(2,40)
+
 
 
