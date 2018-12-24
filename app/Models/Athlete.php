@@ -7,13 +7,32 @@ use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
 
-class Athlete extends Model 
+class Athlete extends Model
 {
     use CrudTrait;
-    use Sluggable,SluggableScopeHelpers;
+    use Sluggable, SluggableScopeHelpers;
 
 
     /*****GLOBAL VARIABLES*****/
+
+    protected $table = 'athletes';
+    public $timestamps = true;
+
+    protected $dates = ['deleted_at'];
+    protected $fillable = array(
+        'firstname',
+        'lastname',
+        'date_of_birth',
+        'status',
+        'image',
+        'slug',
+        'record_id',
+        'trainer_id',
+        'discipline_id',
+        'trophy_id',
+        'division_id',
+        'active');
+
     /**
      * Return the sluggable configuration array for this model.
      *
@@ -29,6 +48,16 @@ class Athlete extends Model
     }
 
     /*****FUNCTIONS*****/
+
+    // The slug is created automatically from the "title" field if no slug exists.
+    public function getSlugOrTitleAttribute()
+    {
+        if ($this->slug != '') {
+            return $this->slug;
+        }
+
+        return $this->title;
+    }
 
     /*****RELATIONS*****/
 
