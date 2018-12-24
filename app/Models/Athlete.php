@@ -49,6 +49,13 @@ class Athlete extends Model
 
     /*****FUNCTIONS*****/
 
+
+    /*****RELATIONS*****/
+
+    /*****SCOPES*****/
+
+    /*****ACCESORS*****/
+
     // The slug is created automatically from the "title" field if no slug exists.
     public function getSlugOrTitleAttribute()
     {
@@ -58,12 +65,6 @@ class Athlete extends Model
 
         return $this->title;
     }
-
-    /*****RELATIONS*****/
-
-    /*****SCOPES*****/
-
-    /*****ACCESORS*****/
 
     /*****MUTATORS*****/
 
