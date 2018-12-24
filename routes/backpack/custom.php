@@ -7,7 +7,7 @@
 // Routes you generate using Backpack\Generators will be placed here.
 
 Route::group([
-    'prefix'     => config('backpack.base.route_prefix', 'admib'),
+    'prefix'     => config('backpack.base.route_prefix', 'admin'),
     'middleware' => ['web', config('backpack.base.middleware_key', 'auth')],
     'namespace'  => 'App\Http\Controllers\Admin',
 ], function () { 
