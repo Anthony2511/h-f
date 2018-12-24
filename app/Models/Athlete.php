@@ -64,6 +64,11 @@ class Athlete extends Model
         }
 
         return $this->title;
+
+        $firstname = $this->firstname();
+        $lastname = $this->lastname();
+
+        return $firstname .'_'. $lastname;
     }
 
     /*****MUTATORS*****/

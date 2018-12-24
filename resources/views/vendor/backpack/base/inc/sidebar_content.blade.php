@@ -20,6 +20,13 @@
 </li>
 
 <li><a href="{{ url(config('backpack.base.route_prefix').'/page') }}"><i class="fa fa-file-o"></i> <span>Pages</span></a></li>
+
+<!-- Athlètes-->
+<li>
+    <a href="{{ url(config('backpack.base.route_prefix', 'admin') . '/athlete') }}"><i class="fa fa-address-card"></i><span>Athlètes</span></a>
+</li>
+
+
 <li><a href="{{ backpack_url('menu-item') }}"><i class="fa fa-list"></i> <span>Menu</span></a></li>
 
 <!-- Translations -->
