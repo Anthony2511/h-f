@@ -18,4 +18,5 @@
         <li><a href="{{ backpack_url('permission') }}"><i class="fa fa-key"></i> <span>Permissions</span></a></li>
     </ul>
 </li>
+<li><a href="{{ backpack_url('menu-item') }}"><i class="fa fa-list"></i> <span>Menu</span></a></li>
 <li><a href='{{ backpack_url('setting') }}'><i class='fa fa-cog'></i> <span>Paramètres</span></a></li>
