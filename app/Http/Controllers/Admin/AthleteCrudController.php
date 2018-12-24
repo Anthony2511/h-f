@@ -17,11 +17,11 @@ class AthleteCrudController extends CrudController
 
         $this->crud->setModel("App\Models\Athlete");
         $this->crud->setRoute(config('backpack.base.route_prefix', 'admin') . '/athlete');
-        $this->crud->setEntityNameStrings('athlete', 'athletes');
+        $this->crud->setEntityNameStrings('athlète', 'athlètes');
 
         /******COLUMNS AND FIELDS*****/
 
-        /****COLUMNS****/
+        /****CRUD COLUMNS****/
         $this->crud->addColumn([
             'name' => 'firstname',
             'label' => 'Prénom'
@@ -32,27 +32,67 @@ class AthleteCrudController extends CrudController
             'label' => 'Nom'
         ]);
 
-        /*****FIELDS*****/
+        /****CRUD BUTTONS****/
+        $this->crud->addButtonFromModelFunction(
+            'line',
+            'Ajouter',
+            'getOpenButton',
+            'beginning');
+
+        /*****CRUD FIELDS*****/
         $this->crud->addField([
             'name' => 'firstname',
             'label' => 'Prénom',
             'type' => 'text',
-            'placeholder' => 'Entrez votre prénom'
+            'attributes' => [
+                'placeholder' => 'Entrez votre prénom'
+            ]
         ]);
 
         $this->crud->addField([
             'name' => 'lastname',
             'label' => 'Nom',
             'type' => 'text',
-            'placeholder' => 'Entrez votre nom'
+            'attributes' => [
+                'placeholder' => 'Entrez votre nom'
+            ]
         ]);
 
+        $this->crud->addField([ // image
+            'label' => "Profile Image",
+            'name' => "image",
+            'type' => 'image',
+            'upload' => true,
+            'crop' => true, // set to true to allow cropping, false to disable
+            'aspect_ratio' => 1, // ommit or set to 0 to allow any aspect ratio
+            // 'disk' => 's3_bucket', // in case you need to show images from a different disk
+            // 'prefix' => 'uploads/images/profile_pictures/' // in case your db value is only the file name (no path), you can use this to prepend your path to the image src (in HTML), before it's shown to the user;
+        ]);
         $this->crud->addField([
             'name' => 'slug',
             'label' => "Slug (URL)",
             'type' => 'text',
             'hint' => 'Est automatiquement généré à partir du nom-prénom si pas remplit.'
         ]);
+
+        $this->crud->addField([
+            'name' => 'date_of_birth',
+            'label' => "Date de naissance",
+            'type' => 'date_picker',
+            // optional:
+            'date_picker_options' => [
+                'todayBtn' => true,
+                'format' => 'dd-mm-yyyy',
+                'language' => 'fr'
+            ],
+        ]);
+
+        $this->crud->addField([
+            'name' => 'status',
+            'label' => "Statut",
+            'type' => 'text'
+        ]);
+
 
     }
 
