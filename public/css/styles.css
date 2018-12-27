@@ -610,9 +610,8 @@ input[type="search"]::-webkit-search-decoration {
 }
 .news-home {
   background-color: #f4f4f4;
-  position: relative;
-  top: -150px;
-  padding: 13.75em 0 3.125em;
+  margin: -9.375em 0 -17.8125em;
+  padding: 13.75em 0 11.625em;
   text-align: center;
 }
 .news-home__container {
@@ -1018,6 +1017,131 @@ input[type="search"]::-webkit-search-decoration {
 .wrap {
   max-width: 77.5em;
   margin: 0 auto;
+}
+.footer {
+  margin-top: 9.375em;
+  position: relative;
+  overflow: hidden;
+  height: 479px;
+  color: #fff;
+  font-family: 'opensans';
+}
+.footer__bloc-container {
+  position: relative;
+  z-index: 30;
+  padding: 11.375em 0 0;
+}
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 3.125em;
+}
+.footer__bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fa9926;
+  -webkit-transform: skewY(-5deg);
+          transform: skewY(-5deg);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+.footer__title {
+  font-size: 1.875em;
+  font-family: 'montserrat';
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+.footer__title:after {
+  content: '';
+  display: block;
+  background-color: #fff;
+  width: 1em;
+  height: 0.066666666666667em;
+}
+.footer__contact-item {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 2;
+}
+.footer__contact-item span {
+  text-transform: lowercase;
+  font-weight: 400;
+}
+.footer__copyright {
+  text-align: center;
+  border-top: 1px solid #fff;
+  padding: 1.25em 0;
+}
+.footer__copyright a {
+  font-weight: 700;
+}
+.footer__results-item {
+  line-height: 2;
+}
+.footer__results-link {
+  position: relative;
+  display: inline-block;
+}
+.footer__results-link:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  left: 0;
+  top: 0;
+  height: 2px;
+  background-color: #fff;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+.footer__results-link:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 50%;
+  height: 2px;
+  background-color: #fff;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+.footer__results-link:hover:before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+.footer__results-link:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /* ******************
  * Trumps
