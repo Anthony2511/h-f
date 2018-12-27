@@ -4,7 +4,8 @@
         <div class="home-athletes__container">
             <div class="home-athletes__bloc">
                 <figure class="home-athletes__figure">
-                    <img src="../img/jeroen-dhoedt.png" alt="Image de l'athlète : Jeroen D'Hoedt" width="335" height="457">
+                    <img src="../img/jeroen-dhoedt.png" alt="Image de l'athlète : Jeroen D'Hoedt" width="335"
+                         height="457">
                 </figure>
                 <section class="home-athletes__infos">
                     <h4 class="home-athletes__infos-title">Jeroen <span>D'hoedt</span></h4>

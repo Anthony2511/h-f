@@ -1,0 +1,77 @@
+.news-home
+  background-color $cLightGrey
+  position relative
+  top -150px
+  padding s(220,16) 0 s(50,16)
+  text-align center
+  &__container
+    margin s(50,16) 0
+    display flex
+    flex-direction row
+    justify-content space-between
+    width 100%
+  &__bloc
+    font-family 'opensans'
+    width 47.5%
+    position relative
+  &__link
+    position absolute
+    top 0
+    left 0
+    right 0
+    bottom 0
+    width 100%
+    height 100%
+    display block
+  &__figure
+    position relative
+    & img
+      display block
+      width 100%
+      border-radius 10px 10px 0 0
+  &__date
+    position absolute
+    top: 0
+    right 0
+    color $cWhite
+    font-weight: 300
+    font-style italic
+    background-color $cDarkOrange
+    padding s(10,16) s(20,16)
+    border-radius 0 10px 0 0
+  &__sub-bloc
+    padding s(30,16)
+    background-color $cWhite
+    border-radius 0 0 10px 10px
+    color $cDarkBlue
+    text-align left
+  &__author
+    display flex
+    flex-direction row
+    align-items center
+    margin-bottom s(20,16)
+  &__author-name
+    font-family 'montserrat'
+    font-weight: 400
+    & span
+      font-weight: 700
+  &__author-figure
+    & img
+      border-radius 50%
+      margin-right s(10,16)
+  &__title
+    font-family 'montserrat'
+    font-size s(25,16)
+    font-weight: 700
+    margin-bottom s(30,25)
+  &__text
+    line-height 1.6
+    margin-bottom s(30,16)
+  &__comments
+    font-weight: 700
+    vertical-align top
+    &:before
+      icon('message')
+      color $cOrange
+      font-size s(18,16)
+      margin-right s(10,18)
