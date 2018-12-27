@@ -25,10 +25,37 @@
     display block
   &__figure
     position relative
+    &:before
+      content ''
+      display block
+      position absolute
+      top 0
+      right 0
+      left 0
+      bottom 0
+      background-color alpha($cBlue,0)
+      border-radius 10px 10px 0 0
+      transition .3s ease-in-out
+  &__bloc-figure
+    &:before
+      icon('add')
+      color $cWhite
+      position absolute
+      bottom 0
+      top 50%
+      font-size s(25,16)
+      transform translateY(-30px)
+      transition .3s ease-in-out
+      opacity 0
     & img
       display block
       width 100%
       border-radius 10px 10px 0 0
+      &:before
+        icon ('add')
+        color $cWhite
+        position absolute
+        top 50%
   &__date
     position absolute
     top: 0
@@ -75,3 +102,14 @@
       color $cOrange
       font-size s(18,16)
       margin-right s(10,18)
+
+
+.news-home__bloc:hover .news-home__bloc-figure:before
+  transition .3s ease-in-out
+  transform translateY(0px)
+  opacity 1
+
+.news-home__bloc:hover .news-home__figure:before
+  transition .3s ease-in-out
+  background-color alpha($cBlue,0.5)
+

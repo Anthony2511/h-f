@@ -647,10 +647,60 @@ input[type="search"]::-webkit-search-decoration {
 .news-home__figure {
   position: relative;
 }
-.news-home__figure img {
+.news-home__figure:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(52,73,94,0);
+  border-radius: 10px 10px 0 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.news-home__bloc-figure:before {
+  font-family: 'iconfont';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\E900";
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  top: 50%;
+  font-size: 1.5625em;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+}
+.news-home__bloc-figure img {
   display: block;
   width: 100%;
   border-radius: 10px 10px 0 0;
+}
+.news-home__bloc-figure img:before {
+  font-family: 'iconfont';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\E900";
+  color: #fff;
+  position: absolute;
+  top: 50%;
 }
 .news-home__date {
   position: absolute;
@@ -722,6 +772,18 @@ input[type="search"]::-webkit-search-decoration {
   color: #fa9926;
   font-size: 1.125em;
   margin-right: 0.555555555555556em;
+}
+.news-home__bloc:hover .news-home__bloc-figure:before {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  opacity: 1;
+}
+.news-home__bloc:hover .news-home__figure:before {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background-color: rgba(52,73,94,0.5);
 }
 .nav__container {
   display: -webkit-box;

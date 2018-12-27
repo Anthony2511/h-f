@@ -5,9 +5,11 @@
             <div class="news-home__container">
                 <div class="news-home__bloc">
                     <figure class="news-home__figure">
-                        <time class="news-home__date">16/11/2018</time>
-                        <img src="../img/photos-news.png" alt="Record du club Martin Reip" width="541" height="250">
-                    </figure>
+                        <div class="news-home__bloc-figure">
+                            <time class="news-home__date">16/11/2018</time>
+                            <img src="../img/photos-news.png" alt="Record du club Martin Reip" width="541" height="250">
+                        </div>
+                        </figure>
                     <section class="news-home__sub-bloc">
                         <div class="news-home__author">
                             <figure class="news-home__author-figure">
@@ -29,8 +31,10 @@
                 </div>
                 <div class="news-home__bloc">
                     <figure class="news-home__figure">
-                        <time class="news-home__date">16/11/2018</time>
-                        <img src="../img/photos-news.png" alt="Record du club Martin Reip" width="541" height="250">
+                        <div class="news-home__bloc-figure">
+                            <time class="news-home__date">16/11/2018</time>
+                            <img src="../img/photos-news.png" alt="Record du club Martin Reip" width="541" height="250">
+                        </div>
                     </figure>
                     <section class="news-home__sub-bloc">
                         <div class="news-home__author">
