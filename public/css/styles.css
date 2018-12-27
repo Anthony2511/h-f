@@ -280,6 +280,7 @@ input[type="search"]::-webkit-search-decoration {
   background-position: 50% 50%;
   height: 46em;
   position: relative;
+  z-index: 50;
 }
 .header-home__bloc {
   color: #fff;
@@ -453,6 +454,7 @@ input[type="search"]::-webkit-search-decoration {
   width: 49%;
   background-color: #fff;
   border-radius: 10px;
+  position: relative;
 }
 .compet-home__bloc-right {
   width: 49%;
@@ -462,8 +464,20 @@ input[type="search"]::-webkit-search-decoration {
   padding: 1.875em;
   border-radius: 10px;
   margin-bottom: 1.25em;
+  position: relative;
 }
-.compet-home__left-flex {
+.compet-home__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.compet-home__left-flex,
+.compet-home__right-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -511,6 +525,49 @@ input[type="search"]::-webkit-search-decoration {
 .compet-home__left-text {
   line-height: 1.6;
   margin-bottom: 1.25em;
+}
+.compet-home__bloc-date {
+  font-size: 1.875em;
+  font-weight: 700;
+  background-color: #fa9926;
+  padding: 0.5em 0.666666666666667em;
+  color: #fff;
+  font-family: 'opensans';
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 0.333333333333333em 0.666666666666667em 0;
+}
+.compet-home__bloc-date span {
+  text-transform: uppercase;
+  display: block;
+  font-size: 0.533333333333333em;
+}
+.compet-home__bloc-title {
+  font-family: 'montserrat';
+  font-size: 1.25em;
+  font-weight: 700;
+  margin-bottom: 0.75em;
+}
+.compet-home__bloc-location:before {
+  font-family: 'iconfont';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\E901";
+  color: #fe712a;
+  margin-right: 0.625em;
+}
+.compet-home__bloc-left:hover .button-simple:after,
+.compet-home__bloc:hover .button-simple__size:after {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .nav__container {
   display: -webkit-box;
@@ -676,6 +733,33 @@ input[type="search"]::-webkit-search-decoration {
   content: "\E90A";
   font-size: 0.72em;
   margin-left: 0.555555555555556em;
+  display: inline-block;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.button-simple__size {
+  font-size: 1.25em;
+  font-weight: 700;
+}
+.button-simple__size:after {
+  font-family: 'iconfont';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\E90A";
+  font-size: 0.7em;
+  margin-left: 0.714285714285714em;
+  display: inline-block;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.button-float {
+  float: right;
 }
 .title {
   font-family: 'montserrat';

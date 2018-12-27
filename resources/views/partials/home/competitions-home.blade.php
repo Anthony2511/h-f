@@ -23,18 +23,28 @@
             </div>
             <div class="compet-home__bloc-right">
                 <div class="compet-home__bloc">
-                    <time class="compet-home__bloc-date">30 <span>Nov</span></time>
-                    <h4 class="compet-home__bloc-title" aria-level="4" role="heading">Cross de Liège à Naimettes</h4>
-                    <a href="#" class="button-simple">En savoir plus</a>
+                    <div class="compet-home__right-flex">
+                        <time class="compet-home__bloc-date">30 <span>Nov</span></time>
+                        <section>
+                            <h4 class="compet-home__bloc-title" aria-level="4" role="heading">Cross de Liège à Naimettes</h4>
+                            <span class="compet-home__bloc-location">Rue des charrons 116, 4800 Verviers</span>
+                        </section>
+                    </div>
+                    <a href="#" class="button-simple__size">En savoir plus</a>
                     <a href="#" class="compet-home__link"></a>
                 </div>
                 <div class="compet-home__bloc">
-                    <time class="compet-home__bloc-date">30 <span>Nov</span></time>
-                    <h4 class="compet-home__bloc-title" aria-level="4" role="heading">Cross de Liège à Naimettes</h4>
-                    <a href="#" class="button-simple">En savoir plus</a>
+                    <div class="compet-home__right-flex">
+                        <time class="compet-home__bloc-date">30 <span>Nov</span></time>
+                        <section>
+                            <h4 class="compet-home__bloc-title" aria-level="4" role="heading">Cross de Liège à Naimettes</h4>
+                            <span class="compet-home__bloc-location">Rue des charrons 116, 4800 Verviers</span>
+                        </section>
+                    </div>
+                    <a href="#" class="button-simple__size">En savoir plus</a>
                     <a href="#" class="compet-home__link"></a>
                 </div>
-                <a href="" class="button">
+                <a href="" class="button button-float">
                     <span class="button-blue__left">Voir toutes les compétitions</span>
                     <i class="button-blue__right"></i>
                 </a>

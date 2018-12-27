@@ -40,6 +40,17 @@ class AthleteCrudController extends CrudController
             'beginning');
 
         /*****CRUD FIELDS*****/
+        $this->crud->addField([ // image
+            'label' => "Image de l'athlète",
+            'name' => "image",
+            'type' => 'image',
+            'upload' => true,
+            'crop' => true, // set to true to allow cropping, false to disable
+            'aspect_ratio' => 0, // ommit or set to 0 to allow any aspect ratio
+            // 'disk' => 's3_bucket', // in case you need to show images from a different disk
+            // 'prefix' => 'uploads/images/profile_pictures/' // in case your db value is only the file name (no path), you can use this to prepend your path to the image src (in HTML), before it's shown to the user;
+        ]);
+
         $this->crud->addField([
             'name' => 'firstname',
             'label' => 'Prénom',
@@ -58,16 +69,6 @@ class AthleteCrudController extends CrudController
             ]
         ]);
 
-        $this->crud->addField([ // image
-            'label' => "Profile Image",
-            'name' => "image",
-            'type' => 'image',
-            'upload' => true,
-            'crop' => true, // set to true to allow cropping, false to disable
-            'aspect_ratio' => 1, // ommit or set to 0 to allow any aspect ratio
-            // 'disk' => 's3_bucket', // in case you need to show images from a different disk
-            // 'prefix' => 'uploads/images/profile_pictures/' // in case your db value is only the file name (no path), you can use this to prepend your path to the image src (in HTML), before it's shown to the user;
-        ]);
         $this->crud->addField([
             'name' => 'slug',
             'label' => "Slug (URL)",
@@ -91,6 +92,18 @@ class AthleteCrudController extends CrudController
             'name' => 'status',
             'label' => "Statut",
             'type' => 'text'
+        ]);
+        $this->crud->addField([
+            'name' => 'active', // the name of the db column
+            'label' => 'Activité', // the input label
+            'type' => 'radio',
+            'inline' => 'true',
+                'options'     => [ // the key will be stored in the db, the value will be shown as label;
+        0 => "Actif",
+        1 => "Inactif"
+    ],
+            // optional
+            //'inline'      => false, // show the radios all on the same line?
         ]);
 
 

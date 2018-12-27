@@ -12,14 +12,27 @@
     width 49%
     background-color $cWhite
     border-radius 10px
+    position relative
   &__bloc-right
     width 49%
+    clearfix()
   &__bloc
     background-color $cWhite
     padding s(30,16)
     border-radius 10px
     margin-bottom s(20,16)
+    position relative
+  &__link
+    position absolute
+    top 0
+    left 0
+    right 0
+    bottom 0
+    width 100%
+    height 100%
+    display block
   &__left-flex
+  &__right-flex
     display flex
     flex-direction row
   &__left-date
@@ -49,5 +62,34 @@
   &__left-text
     line-height 1.6
     margin-bottom s(20,16)
+  &__bloc-date
+    font-size s(30,16)
+    font-weight: 700
+    background-color $cOrange
+    padding s(15,30) s(20,30)
+    color $cWhite
+    font-family 'opensans'
+    border-radius 10px
+    text-align center
+    margin 0 s(10,30) s(20,30) 0
+    & span
+      text-transform: uppercase
+      display block
+      font-size s(16,30)
+  &__bloc-title
+    font-family 'montserrat'
+    font-size s(20,16)
+    font-weight: 700
+    margin-bottom s(15,20)
+  &__bloc-location
+    &:before
+      icon('location')
+      color $cDarkOrange
+      margin-right s(10,16)
+
+.compet-home__bloc-left:hover .button-simple:after,
+.compet-home__bloc:hover .button-simple__size:after
+  transform translateX(5px)
+  transition .3s ease-in-out
 
 
