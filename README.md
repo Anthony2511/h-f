@@ -28,5 +28,5 @@ un nouveau site avec la création d'une administration.
 * __Afficher les records du club__
 * __Tarifs des équipements du club__
 
-[Lien vers mon design](https://xd.adobe.com/view/6083379b-4106-4540-6189-617cb68d6b9a-16b2/?fullscreen)
+[Lien vers mon design](https://projects.invisionapp.com/d/main#/projects/prototyp)
 [Lien vers ma base de données](http://www.laravelsd.com/share/d6w7QY)
